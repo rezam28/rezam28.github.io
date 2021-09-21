@@ -2,322 +2,873 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>PortoFolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.2.0
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/69e0e324fb.js" crossorigin="anonymous"></script>
+    <title>Portofolio</title>
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Reza</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">PortoFolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/back.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Reza Maulana</h1>
-          <p class="hero-subtitle">Fresh Graduate</p>
-          <!-- <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> -->
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/pp.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Reza Maulana</span></p>
-                        <p><span class="title-s">Profile: </span> <span>web developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>rezamaulana.email@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>087816333832</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="skill-mf">
-                        <p class="title-s">Skill</p>
-                        <span>- HTML</span> 
-                        <br>
-                        <span>- CSS</span> 
-                        <br>
-                        <span>- PHP</span> 
-                        <br>
-                        <span>- JAVASCRIPT</span> 
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-7">
-                      <div class="skill-mf">
-                        <p class="title-s">Framework</p>
-                        <span>- Laaravel</span> 
-                        <br>
-                        <span>- Bootstrap</span> 
-                        <br>
-                        <span>- JQuery</span> 
-                        <br>
-                        <span>- Codeigniter</span> 
-                      </div>
-                    </div>
-                  </div>
-                  
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fas fa-home nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fas fa-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fas fa-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="fas fa-briefcase nav__icon"></i> Service
+                        </a>
+                    </li> -->
+                    <li class="nav__item">
+                        <a href="#portofolio" class="nav__link">
+                            <i class="fas fa-clipboard-list nav__icon"></i> Portofolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fas fa-paper-plane nav__icon"></i> ContactMe
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
                 </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      I'm fresh graduated from informatics engineering looking for 
-                      experience and work in the field of information technology.
-                    </p>
-                    <!-- <p class="lead">
-                      
-                    </p>
-                    <p class="lead">
-                      
-                    </p> -->
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <!-- <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p> -->
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/porto1.JPG" alt="" class="img-fluid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-th-large"></i>
+                    <!--fa-bars-->
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">SPK Pemilihan tanaman pangan</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">22 Januari 2021</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          
-          
-          
-          
-          
+        </nav>
 
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
+    </header>
+    <!-- Main -->
+    <main class="main">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://github.com/rezam28" target="_blank" class="home__social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="home__social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/profil2.png"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">HI, I'm Reza Maulana </h1>
+                        <h3 class="home__subtitle">Front-end Developer</h3>
+                        <p class="home__description">I am a fresh graduate from the University of 17 Agustus 1945 Surabaya 
+                            majoring in informatics engineering with a great passion for working in the field of Front-end developer.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="far fa-paper-plane button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="fas fa-mouse home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/profil20.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">I am a fresh graduate from the University of 17 Agustus 1945 Surabaya 
+                        majoring in informatics engineering with a great passion for working in the field of front-end developer.</p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">00</span>
+                            <span class="about__info-name">Years <br>Experience</span>
                         </div>
-                      </form>
+
+                        <div>
+                            <span class="about__info-title">02</span>
+                            <span class="about__info-name">Complete <br> Project</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">01</span>
+                            <span class="about__info-name">Companies <br>Worked</span>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Contact
-                      </h5>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/Portofolio-reza.pdf" class="button button--flex">
+                            Download CV <i class="fas fa-download button__icon"></i>
+                        </a>
                     </div>
-                    <div class="more-info">
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Jl Simo Rukun 9/24A</li>
-                        <li><span class="bi bi-phone"></span> 087816333832</li>
-                        <li><span class="bi bi-envelope"></span> rezamaulana.email@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="#"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href="#"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href="#"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href="#"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
+        </section>
 
-  </main><!-- End #main -->
+        <!-- Skills-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My Technical Level</span>
 
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <div class="skills__container container grid">
+                <div>
+                    <!-- Skill 1 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-code fa-2x skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Programing Language</h1>
+                                <!-- <span class="skills__subtitle">Less than 1 year</span> -->
+                            </div>
+                            <i class="fas fa-caret-down fa-3x skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div> -->
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div> -->
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div> -->
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills 2 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-server fa-2x skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Framework</h1>
+                                <!-- <span class="skills__subtitle">More than 4 years</span> -->
+                            </div>
+                            <i class="fas fa-caret-down fa-3x skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Laravel</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div> -->
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Codeigniter</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div> -->
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div> -->
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Jquery</h3>
+                                    <!-- <span class="skills_number">90%</span> -->
+                                </div>
+                                <!-- <div class="skills__bar">
+                                    <span class="skills__percentage skills__Python"></span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-pencil-ruler fa-2x skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Designer</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+                            <i class="fas fa-caret-down fa-3x skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Sketch</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sketch"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Photoshop</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__photoshop"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
             </div>
-          </div>
+        </section>
+
+        <!-- Qualifikasi -->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My Personal Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="fas fa-user-graduate qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="fas fa-briefcase qualification__icon"></i>
+                        Experience
+                    </div>
+                </div>
+
+                <div class="qualification__section">
+                    <!-- Qualifikasi Content 1 Study -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- Qualifikasi 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Informatics Engineering</h3>
+                                <span class="qualification__subtitle">University 17 Aguatus 1945 - Surabaya</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2016 - 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Qualifikasi 2 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Multimedia</h3>
+                                <span class="qualification__subtitle">SMK Pawiyatan - Surabaya</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2013 - 2016
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Qualifikasi 3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">SMP</h3>
+                                <span class="qualification__subtitle">SMPN 33 - Surabaya</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2010 - 2013
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Qualifikasi 4 
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> 
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">UI/UX</h3>
+                                <span class="qualification__subtitle">University</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2016 - 2020
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <!-- Qualifikasi Content 2 Work -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- Qualifikasi 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">SPK Fuzzy AHP</h3>
+                                <span class="qualification__subtitle">Final Project</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2020 - 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Qualifikasi 2 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Internship</h3>
+                                <span class="qualification__subtitle">CV.INTAN - Surabaya</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2019 - 2019
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Qualifikasi 3 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Ui Design</h3>
+                                <span class="qualification__subtitle">Figma - Spain</span>
+                                <div class="qualification__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2016 - 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> 
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <!-- <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">what i offer</span>
+
+            <div class="services__container container grid">
+               
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-layer-group services__icon"></i>
+                        <h3 class="services__title">Ui/Ux <br> Design</h3>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="fas fa-arrow-right fa-sm button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Ui/Ux <br> Design</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>i develop interface</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>web page develop</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>create ux element interface</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>possition your company brand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-code services__icon"></i>
+                        <h3 class="services__title">Front-end <br> Developer</h3>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="fas fa-arrow-right fa-sm button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Front-end <br> Developer</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>i develop interface</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>web page develop</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>create ux element interface</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>possition your company brand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-pen services__icon"></i>
+                        <h3 class="services__title">Branding <br> Design</h3>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="fas fa-arrow-right fa-sm button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Branding <br> Design</h4>
+                                <i class="fas fa-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>i develop interface</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>web page develop</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>create ux element interface</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="fas fa-check-circle services__modal-icon"></i>
+                                        <p>possition your company brand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Portofolio -->
+        <section class="portofolio section" id="portofolio">
+            <h2 class="section__title">Portofolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portofolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- portofolio 1 
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/perfil.png" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">SPK</h3>
+                            <p class="portofolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odit sed, consequuntur ratione eius non maiores similique iste aliquid dolor, pariatur quaerat consequatur sint nisi ullam voluptate reprehenderit quia quo.</p>
+                            <a href="#" class="button button--flex button--small portofolio__button">
+                                Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>-->
+                    <!-- portofolio 2 -->
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/porto1.JPG" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">SPK Fuzzy-AHP</h3>
+                            <p class="portofolio__description">Sebuah Project Tugas Akhir yang digunakan untuk meyakinkan sebuah keputusan dalam pemilihan suatu tanaman pangan yang akan di tanam berdasarkan suatu lahan</p>
+                            <a href="#" class="button button--flex button--small portofolio__button">
+                                Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- portofolio 3 
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/perfil.png" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">Brand Design</h3>
+                            <p class="portofolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odit sed, consequuntur ratione eius non maiores similique iste aliquid dolor, pariatur quaerat consequatur sint nisi ullam voluptate reprehenderit quia quo.</p>
+                            <a href="#" class="button button--flex button--small portofolio__button">
+                                Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fas fa-angle-right swiper-portofolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-angle-left swiper-portofolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Project 
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have Project</h2>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur rem velit eaque placeat delectus temporibus ratione, tempore commodi accusantium, dignissimos, deserunt provident ex? Voluptatibus esse est doloremque odio explicabo perspiciatis?</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="fas fa-envelope project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/perfil.png" alt="" class="project__img">
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Testimonial -->
+        <!-- <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My Client Say</span>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    Testimonial 1
+                    <div class="swiper-slide testimonial__client">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                               
+
+                                <div>
+                                    <h3 class="testimonial__name">Sam Smith</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio at corporis incidunt quam consectetur, dolores neque repellat corrupti ea nemo reiciendis animi architecto repellendus, inventore harum sed ipsam ullam sit!</p>
+
+                    </div>
+                    Testimonial 2
+                    <div class="swiper-slide testimonial__client">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                               
+
+                                <div>
+                                    <h3 class="testimonial__name">Jared Robin</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio at corporis incidunt quam consectetur, dolores neque repellat corrupti ea nemo reiciendis animi architecto repellendus, inventore harum sed ipsam ullam sit!</p>
+
+                    </div>
+                    Testimonial 3
+                    <div class="swiper-slide testimonial__client">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                
+
+                                <div>
+                                    <h3 class="testimonial__name">Arya Smith</h3>
+                                    <span class="testimonial__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                                <i class="far fa-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio at corporis incidunt quam consectetur, dolores neque repellat corrupti ea nemo reiciendis animi architecto repellendus, inventore harum sed ipsam ullam sit!</p>
+
+                    </div>
+                </div>
+                Add Pagination
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+        </section> -->
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in Touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="fas fa-phone-square-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Phone/Whatsapp</h3>
+                            <span class="contact__subtitle">087-816-333-832</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="fas fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">rezamaulana.email@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Jl Simo Rukun 9/24A, Simomulyo, Kota Surabaya, Jawa Timur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <form action="" class="contact__form grid">
+                    <div class="contact__input grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__input grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label>
+                        <input type="email" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="far fa-paper-plane button__icon"></i>
+                        </a>
+                    </div>
+                </form> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Reza Maulana</h1>
+                    <span class="footer__subtitle">Front-end Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portofolio" class="footer__link">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/" target="blank" class="footer__social">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="blank" class="footer__social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" target="blank" class="footer__social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                
+            </div>
         </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+    </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/main.js"></script>
+    
 </body>
 
 </html>
